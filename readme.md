@@ -36,3 +36,14 @@ Algorithm:
 5. Update the maximum length found.
 6. Return the maximum length.
 --------------------------------------------------------------------------------------
+# Day 4 - Median of Two Sorted Arrays
+DESCRIPTION: 
+      Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
+
+ALGORITHM:
+    1. Merge nums1 and nums2.
+    2.Sort the merged array.
+    3.Find the total number of elements.
+    4.If the count is odd, return the middle element.
+    5.If the count is even, return the average of the two middle elements.  
+---------------------------------------------------------------------------------------    
