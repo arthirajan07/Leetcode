@@ -46,4 +46,22 @@ ALGORITHM:
     3.Find the total number of elements.
     4.If the count is odd, return the middle element.
     5.If the count is even, return the average of the two middle elements.  
----------------------------------------------------------------------------------------    
+---------------------------------------------------------------------------------------
+
+# Day 5 - Longest Palindromic Substring
+Problem Statement:
+Given a string `s`, return the longest palindromic substring in `s`.
+
+Approach:
+Used the **Expand Around Center** technique. Consider each character as the center of a palindrome, expand in both directions for odd and even length palindromes, and keep track of the longest substring found.
+
+Algorithm:
+1. Initialize an empty string `res`.
+2. Traverse each character in the string.
+3. Expand around the current index for odd-length palindrome.
+4. Expand around the gap between current and next index for even-length palindrome.
+5. Update `res` if a longer palindrome is found.
+6. Return the longest palindromic substring.
+
+
+    
