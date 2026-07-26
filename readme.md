@@ -81,3 +81,23 @@ Approach:
 3. Add each character to the current row.
 4. Change direction at the first and last rows.
 5. Join all rows and return the result.
+---------------------------------------------------------------------------------------------
+
+# Day 7 - Reverse Integer
+
+Problem:
+Given a signed 32-bit integer `x`, return its digits reversed. If the reversed integer overflows the 32-bit signed integer range, return `0`.
+
+Approach:
+- Store the sign of the number.
+- Reverse the absolute value using string slicing.
+- Restore the sign.
+- Return `0` if the result is outside the 32-bit signed integer range.
+
+Algorithm:
+1. Check the sign of `x`.
+2. Reverse the digits of the absolute value.
+3. Apply the original sign.
+4. If the reversed number is outside `[-2³¹, 2³¹-1]`, return `0`.
+5. Otherwise, return the reversed integer.
+
