@@ -62,6 +62,22 @@ Algorithm:
 4. Expand around the gap between current and next index for even-length palindrome.
 5. Update `res` if a longer palindrome is found.
 6. Return the longest palindromic substring.
+-----------------------------------------------------------------------------------------
 
+# Day 6 - Zigzag Conversion
 
-    
+Description:
+Given a string `s` and an integer `numRows`, arrange the string in a zigzag pattern and return the string read row by row.
+Approach:
+- Create a list for each row.
+- Traverse the string character by character.
+- Move downward through the rows, then upward.
+- Append each character to the corresponding row.
+- Join all rows to get the final result.
+
+ Algorithm:
+1. If `numRows` is 1 or greater than the string length, return the original string.
+2. Create an array of empty strings for each row.
+3. Add each character to the current row.
+4. Change direction at the first and last rows.
+5. Join all rows and return the result.
