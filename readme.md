@@ -100,4 +100,32 @@ Algorithm:
 3. Apply the original sign.
 4. If the reversed number is outside `[-2³¹, 2³¹-1]`, return `0`.
 5. Otherwise, return the reversed integer.
+---------------------------------------------------------------------------------------------
 
+# Day 8 - String to Integer
+
+Problem:
+Convert a string to a 32-bit signed integer (`atoi`) by:
+- Ignoring leading spaces
+- Handling `+` or `-` signs
+- Reading digits until a non-digit character
+- Clamping the result to the 32-bit signed integer range
+
+ Approach:
+- Remove leading whitespace.
+- Determine the sign.
+- Traverse the string and build the integer.
+- Stop at the first non-digit character.
+- Clamp the result to the range `[-2³¹, 2³¹ - 1]`.
+
+ Algorithm:
+
+1. Remove leading whitespaces from the string.
+2. Check for an optional `+` or `-` sign.
+3. Read digits one by one and form the integer.
+4. Stop when a non-digit character is encountered.
+5. Apply the sign to the integer.
+6. Clamp the result to the 32-bit signed integer range:
+   - Minimum: `-2^31`
+   - Maximum: `2^31 - 1`
+7. Return the final integer.
