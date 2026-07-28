@@ -129,3 +129,17 @@ Convert a string to a 32-bit signed integer (`atoi`) by:
    - Minimum: `-2^31`
    - Maximum: `2^31 - 1`
 7. Return the final integer.
+---------------------------------------------------------------------------------------------
+
+# Day 9 - Palindrome Number
+
+ Problem:
+Given an integer `x`, return `true` if `x` is a palindrome, and `false` otherwise.
+
+Algorithm:
+1. If the number is negative, return `False`.
+2. Convert the number to a string.
+3. Reverse the string.
+4. Compare the original string with the reversed string.
+5. If both are equal, return `True`; otherwise, return `False`.
+
