@@ -142,4 +142,31 @@ Algorithm:
 3. Reverse the string.
 4. Compare the original string with the reversed string.
 5. If both are equal, return `True`; otherwise, return `False`.
+-------------------------------------------------------
+
+# Day 10 - Regular Expression Matching
+
+# Regular Expression Matching
+
+## Problem Statement
+Given an input string `s` and a pattern `p`, implement regular expression matching with support for:
+
+- `.` Matches any single character.
+- `*` Matches zero or more of the preceding element.
+
+The matching should cover the entire input string.
+
+## Algorithm
+1. Create a recursive function `dp(i, j)` where:
+   - `i` is the current index in the string.
+   - `j` is the current index in the pattern.
+2. If the pattern is completely processed, return whether the string is also fully processed.
+3. Check if the current characters match.
+4. If the next pattern character is `*`:
+   - Skip the `character*`.
+   - Or use the `*` to match one or more characters.
+5. Otherwise, move to the next character in both the string and the pattern.
+6. Save computed results in a memoization dictionary.
+7. Return the final matching result.
+
 
