@@ -168,5 +168,20 @@ The matching should cover the entire input string.
 5. Otherwise, move to the next character in both the string and the pattern.
 6. Save computed results in a memoization dictionary.
 7. Return the final matching result.
+----------------------------------------------------------------
 
+# Day 11 - Container with most water
+
+ Problem Description :
+Given an array `height`, where each element represents the height of a vertical line, find two lines that together with the x-axis form a container that holds the maximum amount of water.
+
+
+ Algorithm :
+1. Initialize two pointers (`left` and `right`).
+2. Compute the area between them.
+3. Update the maximum area.
+4. Move the shorter pointer inward.
+5. Repeat until the pointers meet.
+6. Return the maximum area.
+----------------------------------------------------------------
 
