@@ -181,4 +181,14 @@ The matching should cover the entire input string.
     -Move the pointer with the shorter height inward, since only that can potentially increase the area.
     -Repeat until the pointers meet, then return max_water.
    -------------------------------------------------------------
-    
+# Day 13 - Roman to Integer
+
+Problem :
+Convert a Roman numeral into its corresponding integer value.
+Algorithm:
+1. Create a dictionary for Roman numeral values.
+2. Initialize `total = 0`.
+3. Traverse the string.
+4. Subtract the current value if it is smaller than the next value; otherwise, add it.
+5. Return `total`.
+
