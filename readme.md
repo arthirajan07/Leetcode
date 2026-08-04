@@ -192,4 +192,18 @@ Algorithm:
 3. Traverse the string.
 4. Subtract the current value if it is smaller than the next value; otherwise, add it.
 5. Return `total`.
+----------------------------------------------------------------
+# Day 14 - Longest Common Prefix
+
+Problem Description :
+Find the longest common prefix string among an array of strings. If there is no common prefix, return an empty string.
+
+Algorithm :
+1. Check if the array is empty.
+2. Set the first string as the prefix.
+3. Compare the prefix with each string in the array.
+4. Shorten the prefix until it matches the beginning of the current string.
+5. Return the longest common prefix.
+
+
 
