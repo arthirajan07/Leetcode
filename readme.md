@@ -172,13 +172,12 @@ The matching should cover the entire input string.
 
 # Day 12 - Roman to Integer
 
-PROBLEM TITLE:
+# PROBLEM TITLE:
     Container With Most Water
-PROBLEM EXPLANATION:
+# PROBLEM EXPLANATION:
     -Initialize two pointers: left at the beginning and right at the end of the array.
     -Calculate the water area using width × min(height[left], height[right]).
     -Update max_water if the current area is larger than the previous maximum.
     -Move the pointer with the shorter height inward, since only that can potentially increase the area.
     -Repeat until the pointers meet, then return max_water.
-    Time Complexity: O(n)
-    Space Complexity: O(1)
+   
