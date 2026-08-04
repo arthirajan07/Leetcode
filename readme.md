@@ -204,6 +204,23 @@ Algorithm :
 3. Compare the prefix with each string in the array.
 4. Shorten the prefix until it matches the beginning of the current string.
 5. Return the longest common prefix.
+----------------------------------------------------------------
+
+# Day 15 - 3Sum
+Problem Description :
+Given an integer array `nums`, return all the unique triplets `[nums[i], nums[j], nums[k]]` such that:
+- `i != j`
+- `i != k`
+- `j != k`
+- `nums[i] + nums[j] + nums[k] == 0`
+
+The solution set must not contain duplicate triplets.
 
 
+Algorithm :
+1. Sort the input array.
+2. Traverse the array with index `i`.
+3. Skip duplicate values for `i`.
+4. Use two pointers to search for pairs whose sum equals `-nums[i]`.
+5. Add unique triplets to the result and return them.
 
